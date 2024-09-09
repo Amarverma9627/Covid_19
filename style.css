@@ -1,0 +1,967 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+*{
+    list-style: 0;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: none;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+
+.main-img {
+    background-image: url(hero-bg.jpg);
+    height: 60rem;
+    width: 135rem;
+    background-size: 130%;
+    background-position-x: center;
+    position: relative;
+    margin-top: -2rem;
+}
+
+.header-flex {
+    position: fixed;
+    display: flex;
+    margin-top: 0rem;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.253),rgba(0, 0, 0, 0.253)); */
+    background: linear-gradient(145deg, rgb(16, 28, 97), rgba(0, 0, 0, 0.473));
+    backdrop-filter: blur(10px);
+    height: 6rem;
+    width: 135rem;
+    z-index: 1;
+}
+
+.hero-covid img {
+    position: absolute;
+    height: 40rem;
+    width: 40rem;
+    margin: 10rem 78rem;
+    background-size: cover;
+    animation: vivek 15s linear infinite;
+}
+
+.hero-covid img:hover {
+    animation-play-state: paused;
+}
+
+@keyframes vivek {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+
+
+.header-flex .first-item {
+    display: flex;
+    padding: 0rem 15rem;
+}
+
+.header-flex .first-item img {
+    height: 4rem;
+    width: 4rem;
+    margin: 2.5rem 0rem;
+}
+
+.header-flex .first-item p {
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: bold;
+
+}
+
+.list li::before {
+    content: '';
+    height: 0.3rem;
+    width: 7rem;
+    background-color: white;
+    position: absolute;
+    bottom: 0rem;
+    transform: scaleX(0);
+    transition: 0.4s ease-in-out;
+}
+
+.list li:hover::before {
+    transform: scaleX(1);
+    background: linear-gradient(145deg, aqua, rgb(213, 46, 228));
+    border-radius: 10px;
+}
+
+.header-flex .list ul {
+    display: flex;
+    color: white;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+}
+
+.header-flex .list ul li {
+    padding-left: 3rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.header-flex .list ul li:hover {
+    color: aqua;
+    text-shadow: 0 0 2rem aqua, 0 0 2rem aqua;
+    font-size: 1.8rem;
+
+}
+
+.header-flex .header-btn button {
+    height: 4.5rem;
+    width: 15rem;
+    /* border: 0.1rem solid white; */
+    background: rgba(255, 255, 255, 0.336);
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    color: white;
+    margin: 0rem 3rem;
+
+}
+
+.header-flex .header-btn button:hover {
+    background: linear-gradient(145deg, aqua, rgb(230, 25, 202));
+    color: black;
+
+}
+
+.header-flex .header-btn button:active {
+    background: transparent;
+    color: white;
+    background: rgba(255, 255, 255, 0.336);
+}
+
+.main-img .Tracker-txt p {
+    font-size: 5rem;
+    position: absolute;
+    color: white;
+    margin: 20rem 15.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main-img .case p {
+    padding: 27rem 15.5rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.main-img .case h1 {
+    margin: -28rem 15.5rem;
+    color: rgb(102 217 102);
+    font-size: 5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 0.5rem;
+}
+
+.main-img .case-record {
+    display: flex;
+    margin: 29rem 15.5rem;
+    font-size: 1.8rem;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main-img .case-record .count-cases {
+    list-style: none;
+    padding-left: 2rem;
+}
+.main-img .meet-btn{
+    width: 20rem;
+}
+
+.main-img .meet-btn button {
+    height: 4.5rem;
+    width: 12rem;
+    border: none;
+    background: linear-gradient(rgb(19, 224, 231),rgb(32, 236, 151));
+    border-radius: 5rem;
+    margin: -24.5rem 15.5rem;
+
+    position: absolute;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+}
+.main-img .meet-btn button:active{
+    background: transparent;
+    color: white;
+    box-shadow: 0 0 1rem rgb(32, 236, 151),0 0 1rem rgb(32, 236, 151);
+}
+
+.co {
+    position: absolute;
+    opacity: 0.5;
+    top: 30rem;
+    font-size: 25rem;
+    color: rgb(101, 124, 226);
+    left: 20rem;
+    animation: vi 10s linear infinite;
+    mix-blend-mode: color-burn;
+    z-index: 1;
+}
+
+@keyframes vi {
+    to {
+        transform: rotate(360deg);
+
+    }
+}
+
+/* second page */
+
+
+.main-img .second-flex {
+    height: 60rem;
+    width: 135rem;
+    display: flex;
+    margin: -12.5rem 0rem;
+    background-color: rgb(13, 33, 82);
+}
+
+.main-img .second-flex .banner-sec img {
+    height: 40rem;
+    background-size: contain;
+    width: 40rem;
+    margin: 11rem 10rem;
+}
+
+.main-img .second-flex .sec-caption {
+    margin: 12rem 0rem;
+}
+
+.main-img .second-flex .sec-caption h3 {
+    color: rgb(35, 228, 147);
+}
+
+.main-img .second-flex .sec-caption h1 {
+    color: white;
+    font-size: 2.7rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main-img .second-flex .sec-caption p {
+    color: white;
+    margin-right: 30rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+}
+
+.main-img .second-flex .sec-caption .about-sec {
+    display: flex;
+}
+
+.main-img .second-flex .sec-caption .about-sec .about-img img {
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+}
+
+.main-img .second-flex .sec-caption .about-sec .about-text h2 {
+    color: white;
+    padding-left: 2rem;
+}
+
+.main-img .second-flex .sec-caption .about-sec .about-text p {
+    color: rgb(32, 218, 224);
+    position: absolute;
+    margin: -1rem 2rem;
+}
+
+.main-img .second-flex .sec-caption .second {
+    margin-top: 2rem;
+}
+
+.main-img .second-flex .sec-caption .third {
+    margin-top: 2rem;
+}
+
+/* third-part */
+.third-flex {
+    background-image: url(footer-bg.jpg);
+    height: 70rem;
+    width: 135rem;
+    margin-top: 12.5rem;
+
+}
+
+.third-flex .top-item {
+    margin: 6rem 0rem;
+    position: relative;
+}
+
+.third-flex .top-item h1 {
+    color: white;
+    font-size: 2.7rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   padding: 6rem 52rem;
+  
+}
+
+.third-flex .top-item p {
+    font-size: 1.2rem;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: -6rem 45rem;
+    text-align: center;
+    position: absolute;
+}
+
+.third-flex .service-main-flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(50rem ,auto));
+    gap:2rem;
+    margin: 5rem;
+    
+    
+}
+
+/* first-face */
+.third-flex .service {
+   
+    border: 1px solid transparent;
+    box-shadow: 0 0 1rem aqua;
+    padding: 1rem;
+    transition: all 0.5s ease;
+    border-radius: 1rem;
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(5px)
+    
+}
+
+.third-flex .service:hover {
+    background: rgba(255, 255, 255, 0.849);
+    box-shadow: 0 0 1rem var(--main-color);
+    transform: translateY(-0.5rem) scale(1.04);
+    cursor: pointer;
+    color: black;
+   
+   
+}
+.third-flex .service img{
+    border-radius: 50%;
+}
+.service p{
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+.service h1{
+    padding-left: 1rem;
+    color: red;
+}
+/* forth-face */
+.forth-main {
+    background: rgb(18, 45, 112);
+    height: 60rem;
+    width: 135rem;
+
+
+}
+
+.about-upper h3 {
+    position: absolute;
+    color: rgb(41, 221, 41);
+    margin: 8rem 10rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+}
+
+.about-upper h1 {
+    position: absolute;
+    color: white;
+    padding: 11rem 10rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.9rem;
+}
+
+.about-upper p {
+    position: absolute;
+    padding: 15rem 10rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    width: 52rem;
+    font-size: 1.6rem;
+}
+
+.safty img {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 10rem;
+}
+
+.saf-flex {
+    position: absolute;
+    margin: 25rem 10rem;
+
+}
+
+.safty .saf-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.safty .saf-flex .wash {
+    padding-left: 1rem;
+}
+
+.safty .saf-flex .wash h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+.safty .saf-flex .wash p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    width: 48rem;
+    margin-top: -1rem;
+    font-size: 1.7rem;
+}
+
+.two {
+    margin: 36rem 10rem;
+}
+
+.three {
+    margin: 47rem 10rem;
+
+}
+
+.about-banner img {
+    position: absolute;
+    margin: 8rem 75rem;
+    height: 50rem;
+    width: 50rem;
+}
+
+/* fifth-page */
+.fifth-img {
+    background-image: url(hero-bg.jpg);
+    height: 90rem;
+    width: 135rem;
+}
+
+.fifth-header-item h1 {
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    left: 57rem;
+    padding-top: 7rem;
+}
+
+.fifth-header-item p {
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin: 14rem 43rem;
+    font-size: 1.5rem;
+    width: 55rem;
+    text-align: center;
+}
+
+.fifth-doctor {
+    background-image: url(doctor-1.jpg);
+    height: 36rem;
+    width: 35rem;
+    margin: 0.5rem 0.5rem;
+}
+
+.fifth-doctor:hover {
+
+    background-size: 105%;
+
+}
+
+.doc2 {
+    background-image: url(doctor-2.jpg);
+    height: 36rem;
+    width: 35rem;
+    background-size: cover;
+    margin: 0.5rem 0.5rem;
+}
+
+.doc3 {
+    background-image: url(doctor-3.jpg);
+    height: 36rem;
+    width: 35rem;
+    background-size: cover;
+    margin: 0.5rem 0.5rem;
+}
+
+.tab {
+    border: 1px solid red;
+}
+
+.doctor-wrapper {
+    background: linear-gradient(rgba(255, 255, 255, 0.767),  rgb(18, 45, 112));
+    width: 36rem;
+    height: 60rem;
+    color: white;
+    text-align: left;
+    position: absolute;
+    margin: 20rem 10rem;
+    border-radius: 1rem;
+}
+
+.doctor-wrapper h2 {
+    padding: 0rem 2rem;
+    font-size: 2rem;
+}
+.doctor-wrapper h2:hover{
+ 
+    color:rgb(243, 33, 78);
+    text-shadow: 0 0 1rem,0 0 1rem;
+    outline-color: black;
+}
+
+.doctor-wrapper h3 {
+    padding: 0rem 2rem;
+    font-size: 2rem;
+    opacity: 0.7;
+    width: 20rem;
+}
+
+.doctor-wrapper p {
+    padding: 0rem 2rem;
+    font-size: 1.2rem;
+}
+
+.doctor-wrapper h1 {
+    padding: 1rem 8rem;
+    border: 1px solid rgba(167, 166, 166, 0.767);
+    margin-left: 2rem;
+    height: 2rem;
+    width: 17rem;
+}
+
+/* doctor-wrapper */
+
+.two2 {
+    margin: 20rem 50rem;
+
+}
+
+/* .doctor-wrapper */
+
+.three3 {
+    margin: 20rem 90rem;
+
+}
+
+.three3 h3 {
+
+    width: 23rem;
+}
+
+
+.email {
+    margin: -1.5rem 0rem;
+    font-size: 1.8rem;
+}
+
+.class:before {
+    font-size: 3rem;
+}
+
+.class {
+    margin: -6.5rem 83rem;
+    position: absolute;
+    z-index: 1;
+   
+    height: 8rem;
+    width: 5rem;
+}
+
+.class2:before {
+    font-size: 3rem;
+}
+
+.class2 {
+    margin: -2rem 83rem;
+    position: absolute;
+    z-index: 1;
+
+}
+
+.two2 .fa-phone-square:before {
+    font-size: 3rem;
+}
+
+.two2 .fa-phone-square {
+    margin: -10.5rem 3rem;
+
+    padding: 4rem 1rem;
+    position: absolute;
+}
+
+.two2 .fa-envelope-o:before {
+    font-size: 3rem;
+}
+
+.two2 .fa-envelope-o {
+    margin: -6.5rem 3rem;
+    
+    padding: 4rem 1rem;
+    position: absolute;
+    height: 0rem;
+
+}
+
+.fa-phone:before {
+    font-size: 3rem;
+}
+
+.fa-phone {
+    margin: 71rem 14rem;
+    position: absolute;
+    color: white;
+    
+    height: 6rem;
+    width: 4rem;
+    padding: 1rem 0rem;
+}
+
+.fa-envelope:before {
+    font-size: 3rem;
+}
+
+.fa-envelope {
+    margin: 76rem 14rem;
+    position: absolute;
+    color: white;
+}
+
+/* six-page */
+
+.six-img {
+    background-color: rgb(18, 45, 112);
+    height: 124rem;
+    width: 135rem;
+
+}
+
+.six-img .six-top-item h1 {
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    left: 50rem;
+    padding-top: 7rem;
+}
+
+.six-img .six-top-item p {
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin: 14rem 38rem;
+    font-size: 1.5rem;
+    width: 55rem;
+    text-align: center;
+}
+
+.saft-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.saft-main img {
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+}
+.saft-main img:hover{
+    box-shadow: 0 0 2rem pink,0 0 2rem pink;
+   
+}
+
+.saft-main .saff {
+    margin: 20rem 0rem;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.saft-main {
+    margin: -5rem 0rem;
+}
+
+.-ttwo .saff {
+    margin: -48rem 0rem;
+}
+
+.saft-main h1 {
+    margin: -2rem 7rem;
+    border: 0.2rem solid #141e6dbd;
+    border-radius: 50%;
+    width: 3rem;
+    z-index: 1;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(88, 212, 88);
+    color: white;
+    position: absolute;
+    font-size: 2rem;
+}
+
+.saft-02 p {
+    width: 18rem;
+}
+
+.saft-main .saft-03 h1 {
+    margin: -2rem 5.5rem;
+}
+
+.mai .saft-01 h1 {
+    margin: -2rem 5.5rem;
+}
+
+.-ttwo .saft-04 h1 {
+    margin: -2rem 8.5rem;
+}
+
+.-ttwo .saff {
+    margin: -48rem 0rem;
+}
+
+.saft-main {
+    margin: 0rem 0rem;
+}
+
+.-tthree .saft-04 h1 {
+    margin: -2rem 8.5rem;
+}
+
+
+/* seven-page */
+.seven-img{
+        background: rgb(18, 45, 112);
+        height: 75rem;
+        width: 135rem;
+}
+
+.seven-img .seven-top-item h1 {
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    left: 50rem;
+    padding-top: 0rem;
+}
+
+.seven-img .seven-top-item p {
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin: 6rem 38rem;
+    font-size: 1.5rem;
+    width: 55rem;
+    text-align: center;
+}
+.blogs{  
+     
+    display:flex;
+    align-items: center;
+    justify-content:space-arround;
+    
+}
+.blog-face{
+    margin-left: 6rem; 
+    margin-top: 15rem; 
+    background-color: rgb(17, 68, 116) ; 
+    height: 59rem;
+}
+.blog-face:hover{
+    box-shadow: 0 0 2rem aqua,0 0 2rem aqua;
+}
+.blog-face img{
+    height: 27rem;
+    width: 37rem;
+}
+
+.blog-face h3{
+    color: white;
+    padding-left: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.blog-face h1{
+    width: 30rem;
+    color: white;
+    padding-left: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.blog-face h1:hover{
+    color: rgb(255, 57, 90);
+}
+.blog-face h2{
+    width: 30rem;
+    color: white;
+    padding-left: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.blog-face .ul{
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.712);
+    width: 33rem;
+    margin: 0rem 2rem;
+    opacity: 0.6;
+}
+.blog-face p{
+    color: white;
+    font-size: 1.5rem;
+
+    margin: 2rem 2rem;
+}
+
+/* eight-page */
+
+.eight-img{
+    background-image: url(hero-bg.jpg);
+    height: 60rem;
+    width: 135rem;
+    background-size: cover;
+}
+.footer-flex{
+    display: flex;
+}
+.footer-item{
+    position: absolute;
+    margin: 15rem 10rem;
+    color: white;  
+    
+}
+.footer-item h1:hover{
+    font-size: 2.1rem;
+    color:orange;
+}
+.footer-item h3:hover{
+    font-size: 1.4rem;
+}
+.footer-item h1,h2,h3{
+    padding-top: 1.8rem;
+    width: 30rem;
+}
+.footer-item h2:hover{
+    font-size: 1.7rem;
+   
+}
+
+.twoo2{
+    margin: 15rem 50rem;  
+      
+}
+.twoo2 h1{
+    padding-left: 2.3rem;
+    width: 20rem;
+}
+.twoo2 ul li{
+    padding-top: 2rem;
+    font-size: 1.8rem;  
+}
+.twoo2 ul{
+    list-style: none;
+}
+.twoo2 p:nth-child(2){
+    position:absolute;
+    font-size: 3rem;
+    margin: 1.3rem 2rem;
+}
+.twoo2 p:nth-child(3){
+    position:absolute;
+    margin: 5.5rem 2rem;
+    font-size: 3rem;
+}
+.twoo2 p:nth-child(4){
+    position:absolute;
+    margin: 9.7rem 2rem;
+    font-size: 3rem;
+}
+.twoo2 p:nth-child(5){
+    position:absolute;
+    margin: 13.7rem 2rem;
+    font-size: 3rem;
+}
+.twoo2 p:nth-child(6){
+    position:absolute;
+    margin: 17.7rem 2rem;
+    font-size: 3rem;
+}
+.thre2{
+    margin: 15rem 80rem;
+}
+.thre2 ul{
+    list-style: none;
+}
+.thre2 ul li{
+    padding-top: 2rem;
+    font-size: 1.8rem;  
+}
+.fa-facebook{
+    margin: 2.3rem 0rem;
+    position: absolute;
+  
+}
+.fa-facebook:before{
+    font-size: 1.5rem;
+}
+.fa-twitter:before{
+    font-size: 1.5rem;
+}
+.fa-twitter{
+    margin:6.3rem 0rem ;
+    position: absolute;
+}
+.fa-instagram:before{
+    font-size: 1.5rem;
+}
+.fa-instagram{
+    position: absolute;
+    margin:10.4rem 0rem ;
+}
+.fa-youtube-play:before{
+    font-size: 1.5rem;
+}
+.fa-youtube-play{
+    margin: 14.5rem 0rem;
+    position: absolute;
+}
+.fa-xing:before{
+    font-size: 1.5rem;
+}
+.fa-xing{
+    position: absolute;
+    margin: 18.6rem 0rem;
+}
+
+
+.four-04{
+    margin: 15rem 105rem;
+}
+::-webkit-scrollbar{
+    width: 1.5rem;
+
+}
+::-webkit-scrollbar-thumb{
+    background: rgba(12, 11, 11, 0.404);
+    width: 50%;  
+}

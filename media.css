@@ -1,0 +1,57 @@
+
+
+@media (max-width:768px) {
+    html {
+        font-size: 45%;
+
+    }
+
+    .main-img .second-flex .banner-sec img {
+        height: 30rem;
+        background-size: contain;
+        width: 30rem;
+        margin: 15rem 20rem;
+    }
+    .main-img .second-flex .sec-caption{
+        position: absolute;
+        margin: 12rem 55rem;
+        width: 60rem;
+    }
+}
+
+
+
+
+
+
+
+
+@media(max-width:552px) {
+    html {
+        font-size: 35%;
+    }
+    
+    .header-flex .header-btn button {
+       
+        font-size: 6px;
+    }
+
+    .main-img .meet-btn button {
+        font-size: 7px;
+    }
+
+    .main-img .second-flex .banner-sec img {
+        height: 20rem;
+        background-size: contain;
+        width: 20rem;
+        margin: 03rem 50rem;
+    }
+
+    .main-img .second-flex .sec-caption {
+        margin: 25rem 40rem;
+        height: 20rem;
+        width: 100rem;
+     
+    }
+    
+}

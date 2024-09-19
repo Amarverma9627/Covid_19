@@ -2,20 +2,23 @@ body {
     margin: 0;
     padding: 0;
 }
-*{
-    list-style: 0;
+
+* {
+    list-style: none;
     text-decoration: none;
+
     outline: none;
     scroll-behavior: none;
     border: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 html {
     font-size: 62.5%;
 }
 
 .main-img {
-    background-image: url(hero-bg.jpg);
+    background-image: url(assets/hero-bg.jpg);
     height: 60rem;
     width: 135rem;
     background-size: 130%;
@@ -114,6 +117,11 @@ html {
     display: flex;
     justify-content: center;
     font-size: 2rem;
+
+}
+
+.header-flex .list ul a {
+    color: white;
 }
 
 .header-flex .list ul li:hover {
@@ -182,7 +190,8 @@ html {
     list-style: none;
     padding-left: 2rem;
 }
-.main-img .meet-btn{
+
+.main-img .meet-btn {
     width: 20rem;
 }
 
@@ -190,7 +199,7 @@ html {
     height: 4.5rem;
     width: 12rem;
     border: none;
-    background: linear-gradient(rgb(19, 224, 231),rgb(32, 236, 151));
+    background: linear-gradient(rgb(19, 224, 231), rgb(32, 236, 151));
     border-radius: 5rem;
     margin: -24.5rem 15.5rem;
 
@@ -199,10 +208,11 @@ html {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.5rem;
 }
-.main-img .meet-btn button:active{
+
+.main-img .meet-btn button:active {
     background: transparent;
     color: white;
-    box-shadow: 0 0 1rem rgb(32, 236, 151),0 0 1rem rgb(32, 236, 151);
+    box-shadow: 0 0 1rem rgb(32, 236, 151), 0 0 1rem rgb(32, 236, 151);
 }
 
 .co {
@@ -294,7 +304,7 @@ html {
 
 /* third-part */
 .third-flex {
-    background-image: url(footer-bg.jpg);
+    background-image: url(assets/footer-bg.jpg);
     height: 70rem;
     width: 135rem;
     margin-top: 12.5rem;
@@ -310,8 +320,8 @@ html {
     color: white;
     font-size: 2.7rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   padding: 6rem 52rem;
-  
+    padding: 6rem 52rem;
+
 }
 
 .third-flex .top-item p {
@@ -325,16 +335,16 @@ html {
 
 .third-flex .service-main-flex {
     display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(50rem ,auto));
-    gap:2rem;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, auto));
+    gap: 2rem;
     margin: 5rem;
-    
-    
+
+
 }
 
 /* first-face */
 .third-flex .service {
-   
+
     border: 1px solid transparent;
     box-shadow: 0 0 1rem aqua;
     padding: 1rem;
@@ -345,7 +355,6 @@ html {
     display: flex;
     align-items: center;
     backdrop-filter: blur(5px)
-    
 }
 
 .third-flex .service:hover {
@@ -354,20 +363,24 @@ html {
     transform: translateY(-0.5rem) scale(1.04);
     cursor: pointer;
     color: black;
-   
-   
+
+
 }
-.third-flex .service img{
+
+.third-flex .service img {
     border-radius: 50%;
 }
-.service p{
+
+.service p {
     font-size: 1.5rem;
     padding-left: 1rem;
 }
-.service h1{
+
+.service h1 {
     padding-left: 1rem;
     color: red;
 }
+
 /* forth-face */
 .forth-main {
     background: rgb(18, 45, 112);
@@ -455,7 +468,7 @@ html {
 
 /* fifth-page */
 .fifth-img {
-    background-image: url(hero-bg.jpg);
+    background-image: url(assets/hero-bg.jpg);
     height: 90rem;
     width: 135rem;
 }
@@ -479,7 +492,7 @@ html {
 }
 
 .fifth-doctor {
-    background-image: url(doctor-1.jpg);
+    background-image: url(assets/doctor-1.jpg);
     height: 36rem;
     width: 35rem;
     margin: 0.5rem 0.5rem;
@@ -492,7 +505,7 @@ html {
 }
 
 .doc2 {
-    background-image: url(doctor-2.jpg);
+    background-image: url(assets/doctor-2.jpg);
     height: 36rem;
     width: 35rem;
     background-size: cover;
@@ -500,7 +513,7 @@ html {
 }
 
 .doc3 {
-    background-image: url(doctor-3.jpg);
+    background-image: url(assets/doctor-3.jpg);
     height: 36rem;
     width: 35rem;
     background-size: cover;
@@ -512,7 +525,7 @@ html {
 }
 
 .doctor-wrapper {
-    background: linear-gradient(rgba(255, 255, 255, 0.767),  rgb(18, 45, 112));
+    background: linear-gradient(rgba(255, 255, 255, 0.767), rgb(18, 45, 112));
     width: 36rem;
     height: 60rem;
     color: white;
@@ -526,10 +539,11 @@ html {
     padding: 0rem 2rem;
     font-size: 2rem;
 }
-.doctor-wrapper h2:hover{
- 
-    color:rgb(243, 33, 78);
-    text-shadow: 0 0 1rem,0 0 1rem;
+
+.doctor-wrapper h2:hover {
+
+    color: rgb(243, 33, 78);
+    text-shadow: 0 0 1rem, 0 0 1rem;
     outline-color: black;
 }
 
@@ -586,7 +600,7 @@ html {
     margin: -6.5rem 83rem;
     position: absolute;
     z-index: 1;
-   
+
     height: 8rem;
     width: 5rem;
 }
@@ -619,7 +633,7 @@ html {
 
 .two2 .fa-envelope-o {
     margin: -6.5rem 3rem;
-    
+
     padding: 4rem 1rem;
     position: absolute;
     height: 0rem;
@@ -634,7 +648,7 @@ html {
     margin: 71rem 14rem;
     position: absolute;
     color: white;
-    
+
     height: 6rem;
     width: 4rem;
     padding: 1rem 0rem;
@@ -689,9 +703,10 @@ html {
     height: 15rem;
     width: 15rem;
 }
-.saft-main img:hover{
-    box-shadow: 0 0 2rem pink,0 0 2rem pink;
-   
+
+.saft-main img:hover {
+    box-shadow: 0 0 2rem pink, 0 0 2rem pink;
+
 }
 
 .saft-main .saff {
@@ -756,10 +771,10 @@ html {
 
 
 /* seven-page */
-.seven-img{
-        background: rgb(18, 45, 112);
-        height: 75rem;
-        width: 135rem;
+.seven-img {
+    background: rgb(18, 45, 112);
+    height: 75rem;
+    width: 135rem;
 }
 
 .seven-img .seven-top-item h1 {
@@ -779,54 +794,63 @@ html {
     width: 55rem;
     text-align: center;
 }
-.blogs{  
-     
-    display:flex;
+
+.blogs {
+
+    display: flex;
     align-items: center;
-    justify-content:space-arround;
-    
+    justify-content: space-arround;
+
 }
-.blog-face{
-    margin-left: 6rem; 
-    margin-top: 15rem; 
-    background-color: rgb(17, 68, 116) ; 
+
+.blog-face {
+    margin-left: 6rem;
+    margin-top: 15rem;
+    background-color: rgb(17, 68, 116);
     height: 59rem;
 }
-.blog-face:hover{
-    box-shadow: 0 0 2rem aqua,0 0 2rem aqua;
+
+.blog-face:hover {
+    box-shadow: 0 0 2rem aqua, 0 0 2rem aqua;
 }
-.blog-face img{
+
+.blog-face img {
     height: 27rem;
     width: 37rem;
 }
 
-.blog-face h3{
+.blog-face h3 {
     color: white;
     padding-left: 2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
-.blog-face h1{
+
+.blog-face h1 {
     width: 30rem;
     color: white;
     padding-left: 2rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.blog-face h1:hover{
+
+.blog-face h1:hover {
     color: rgb(255, 57, 90);
 }
-.blog-face h2{
+
+.blog-face h2 {
     width: 30rem;
     color: white;
     padding-left: 2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.blog-face .ul{
+
+.blog-face .ul {
     border-bottom: 0.1rem solid rgba(255, 255, 255, 0.712);
     width: 33rem;
     margin: 0rem 2rem;
     opacity: 0.6;
 }
-.blog-face p{
+
+.blog-face p {
     color: white;
     font-size: 1.5rem;
 
@@ -835,133 +859,164 @@ html {
 
 /* eight-page */
 
-.eight-img{
-    background-image: url(hero-bg.jpg);
+.eight-img {
+    background-image: url(assets/hero-bg.jpg);
     height: 60rem;
     width: 135rem;
     background-size: cover;
 }
-.footer-flex{
+
+.footer-flex {
     display: flex;
 }
-.footer-item{
+
+.footer-item {
     position: absolute;
     margin: 15rem 10rem;
-    color: white;  
-    
+    color: white;
+
 }
-.footer-item h1:hover{
+
+.footer-item h1:hover {
     font-size: 2.1rem;
-    color:orange;
+    color: orange;
 }
-.footer-item h3:hover{
+
+.footer-item h3:hover {
     font-size: 1.4rem;
 }
-.footer-item h1,h2,h3{
+
+.footer-item h1,
+h2,
+h3 {
     padding-top: 1.8rem;
     width: 30rem;
 }
-.footer-item h2:hover{
+
+.footer-item h2:hover {
     font-size: 1.7rem;
-   
+
 }
 
-.twoo2{
-    margin: 15rem 50rem;  
-      
+.twoo2 {
+    margin: 15rem 50rem;
+
 }
-.twoo2 h1{
+
+.twoo2 h1 {
     padding-left: 2.3rem;
     width: 20rem;
 }
-.twoo2 ul li{
+
+.twoo2 ul li {
     padding-top: 2rem;
-    font-size: 1.8rem;  
+    font-size: 1.8rem;
 }
-.twoo2 ul{
+
+.twoo2 ul {
     list-style: none;
 }
-.twoo2 p:nth-child(2){
-    position:absolute;
+
+.twoo2 p:nth-child(2) {
+    position: absolute;
     font-size: 3rem;
     margin: 1.3rem 2rem;
 }
-.twoo2 p:nth-child(3){
-    position:absolute;
+
+.twoo2 p:nth-child(3) {
+    position: absolute;
     margin: 5.5rem 2rem;
     font-size: 3rem;
 }
-.twoo2 p:nth-child(4){
-    position:absolute;
+
+.twoo2 p:nth-child(4) {
+    position: absolute;
     margin: 9.7rem 2rem;
     font-size: 3rem;
 }
-.twoo2 p:nth-child(5){
-    position:absolute;
+
+.twoo2 p:nth-child(5) {
+    position: absolute;
     margin: 13.7rem 2rem;
     font-size: 3rem;
 }
-.twoo2 p:nth-child(6){
-    position:absolute;
+
+.twoo2 p:nth-child(6) {
+    position: absolute;
     margin: 17.7rem 2rem;
     font-size: 3rem;
 }
-.thre2{
+
+.thre2 {
     margin: 15rem 80rem;
 }
-.thre2 ul{
+
+.thre2 ul {
     list-style: none;
 }
-.thre2 ul li{
+
+.thre2 ul li {
     padding-top: 2rem;
-    font-size: 1.8rem;  
+    font-size: 1.8rem;
 }
-.fa-facebook{
+
+.fa-facebook {
     margin: 2.3rem 0rem;
     position: absolute;
-  
+
 }
-.fa-facebook:before{
+
+.fa-facebook:before {
     font-size: 1.5rem;
 }
-.fa-twitter:before{
+
+.fa-twitter:before {
     font-size: 1.5rem;
 }
-.fa-twitter{
-    margin:6.3rem 0rem ;
+
+.fa-twitter {
+    margin: 6.3rem 0rem;
     position: absolute;
 }
-.fa-instagram:before{
+
+.fa-instagram:before {
     font-size: 1.5rem;
 }
-.fa-instagram{
+
+.fa-instagram {
     position: absolute;
-    margin:10.4rem 0rem ;
+    margin: 10.4rem 0rem;
 }
-.fa-youtube-play:before{
+
+.fa-youtube-play:before {
     font-size: 1.5rem;
 }
-.fa-youtube-play{
+
+.fa-youtube-play {
     margin: 14.5rem 0rem;
     position: absolute;
 }
-.fa-xing:before{
+
+.fa-xing:before {
     font-size: 1.5rem;
 }
-.fa-xing{
+
+.fa-xing {
     position: absolute;
     margin: 18.6rem 0rem;
 }
 
 
-.four-04{
+.four-04 {
     margin: 15rem 105rem;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     width: 1.5rem;
 
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background: rgba(12, 11, 11, 0.404);
-    width: 50%;  
+    width: 50%;
 }
